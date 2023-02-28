@@ -15,7 +15,7 @@ function EventItem({ item }) {
 
   return (
     <li className={classes.item}>
-      <img src={item.image} alt={item.title} />
+      <img src={`/${item.image}`} alt={item.title} />
 
       <div className={classes.content}>
         <h2>{item.title}</h2>
