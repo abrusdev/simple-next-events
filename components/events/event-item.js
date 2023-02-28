@@ -1,5 +1,6 @@
 import classes from './event-item.module.css'
 import Button from '../ui/button';
+import ArrowRightIcon from "@/components/icons/arrow-right-icon";
 
 function EventItem({ item }) {
 
@@ -26,7 +27,12 @@ function EventItem({ item }) {
         </div>
 
         <div className={classes.actions}>
-          <Button link={exploreLink}>Explore Event</Button>
+          <Button link={exploreLink}>
+            <span>Explore Event</span>
+            <span className={classes.icon}>
+              <ArrowRightIcon />
+            </span>
+          </Button>
         </div>
       </div>
     </li>
